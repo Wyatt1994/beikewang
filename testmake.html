@@ -1,0 +1,344 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+	function showValue1(){
+		
+		var test1=document.myform.test1.value;
+			document.myform.result.value=test1;
+	}
+	function showValue2(){
+		
+		var test2=document.myform.test2.value;
+		/*var temp=document.myform.result.value;
+		if (temp!=null) {
+			document.myform.result.value=test2;
+			else
+			{document.myform.result2.value=test2;}
+		}*/
+		document.myform.result2.value=test2;
+	}
+	function showValue3(){
+		
+		var test3=document.myform.test3.value;
+			document.myform.result3.value=test3;
+	}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>试卷制作</title>
+	<style type="text/css">
+body{
+	background-color: f1f1f1;
+	font-size: 18px;
+	
+}
+#div4,#div5,#div6{
+	font-weight: bold;
+	color:#707271;
+}
+#div1{
+	width: 960px;
+	height: 1500px;
+}
+#div2{
+	width: 800px;
+	height: 40px;
+	background-color: #707070;
+	margin-left: 490px;
+	margin-top: 25px;
+
+}
+#div2 ul{
+	
+	height: 40px;
+	list-style-type:none;
+
+}
+#div2 ul li{
+	background-color: #707070;
+	float: left;
+	text-align: center;
+	margin-top: 7px;
+	font-size: 15px;
+	width: 80px;
+
+}
+#div2 ul li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+#div2 ul li a:hover{
+	color:#abc380;
+	text-decoration:none;		
+}
+#div3{
+	width: 800px;
+	margin-left: 490px;
+	background-color: #f3f8f1;
+
+}
+#div4{
+	width: 400px;
+	height: 600px;
+
+	float: left;
+	background-color: #fffff2;
+}
+/*#div6{  分割线
+	width: 8px
+	height:600px;
+	float: left;
+	background-color: #d6d7d8;
+}*/
+#div5{
+	width: 400px;
+	height: 600px;
+	float: left;
+	background-color: #fffff9;
+}
+#nav{ 
+width:960px; 
+height:70px; 
+background:#ffffff;/*为了便于查看区域范围大小，故而加个背景色*/ 
+margin-left:450px;/*水平居中 
+margin-top:30px;/*顶部30px*/ 
+/*margin-left: 500px;*/
+font-family:黑体;
+
+
+}
+#nav ul{
+	width: 960px;
+	height: 35px;
+	list-style-type:none;
+}
+#nav ul li{ float:left;
+width: 80px;
+background: #ffffff;
+line-height: 70px;
+text-align: center;
+padding: 0 10px;
+font-size: 18px;
+} 
+
+/*a{
+	text-decoration: none;
+}*/
+#nav ul li a{
+	text-decoration: none;
+	color:#000000;
+	display: block;
+	
+	
+}
+#nav ul li a:hover{
+	color:#abc380;
+	text-decoration:none;
+	
+	
+}
+#nav ul li a:link{
+	color:#000000;
+	text-decoration:none; 
+}
+#nav ul li a:active{
+	text-decoration:none;
+	color: #abc380;
+}
+#nav ul li a:visited{
+	text-decoration:none;
+}
+#text1 {
+	border:2px #abc380 solid;
+	height: 20px;
+	width: 140px;
+}
+#text2{
+	border-radius:6px;
+	
+	background-color: #fffffc;
+}
+#img1{
+	margin-top: 20px;
+	margin-left: 28px;
+	height: 23px;
+}
+#img2{
+	margin-top: 29px;
+	margin-left: 22px;
+	height: 23px;
+}
+#img3{
+	margin-top: 0px;
+	
+	
+	
+}
+#img4
+{
+	float: left;
+	margin-left: 480px;
+	
+}
+#input1{
+	background:transparent; 
+	border:none; 
+	width: 200px;
+	height: 50px;
+	margin-left: 20px;
+}
+#input2{
+	width: 200px;
+	height: 10px;
+	margin-left: 20px;
+	margin-top: 0px;
+	visibility:hidden
+}
+#text4{
+	background:#eeeeee; 
+	border:none; 
+	width: 250px;
+	height: 50px;
+	font-size: 12px;
+	border-radius:10px;
+	overflow: hidden;
+	margin-left: 20px;
+}
+#button{
+	width:80px;
+	line-height:20px;
+	text-align:center;
+	font-size: 18px;
+	font-weight:bold;
+	color:#fff;
+	background-color: #9bbafa;
+	border: none;
+	border-radius:10px;
+	/*margin:0 20px 20px 0;*/
+	/*position:relative;*/
+	/*overflow:hidden;*/
+	/*display:inline;*/
+}
+#button1{
+	width:80px;
+	line-height:20px;
+	text-align:center;
+	font-size: 18px;
+	font-weight:bold;
+	color:#fff;
+	background-color: #9bbafa;
+	border: none;
+	border-radius:10px;
+	float: left;
+	margin-top: 50px;
+}
+#button:hover{
+	background-color: #18a1f0;
+}
+#button1:hover{
+	background-color: #18a1f0;
+}
+	</style>
+</head>
+<body>
+<div id="nav">
+		<ul>
+			<li style="height: 50px"><img src="images/logo.png" id="img3"></img></li>
+
+			<li style="margin-top: 5px "><a href="#">&nbsp&nbsp首页</a></li>
+			<li style="margin-top: 5px "><a href="#">资源库</a></li>
+			<li style="margin-top: 5px "><a href="#">校园社区</a></li>
+			<li style="margin-top: 5px "><a href="#">我的制作</a></li>
+			<li style="margin-top: 5px "><input type="text" id="text1" ></input></li>
+			 <img src="images/search.png" id="img1" ></img> 
+			&nbsp&nbsp&nbsp
+			<img src="images/gerenzhongxin.png" id="img2" >
+			<img src="images/message.png" id="img2" >
+
+		</ul>
+		<img src="images/traigle.png" id="img4"></img></div>
+		
+		<div id="div2">
+			<ul>
+				<li style="margin-left: 80px"><a href="#">试卷制作</a></li>
+				<li style="margin-left: 80px"><a href="#">课件制作</a></li>
+				<li style="margin-left: 80px"><a href="#">我的制作</a></li>
+			</ul>
+		</div>
+	<div id="div3">
+	<form action=""method="post"name="myform">
+<div id="div4">
+
+<table>
+<tr><td>试卷名：<input style="margin-left: 20px;"type="text" id="text2" ></input></td></tr>
+<tr><td>选择题1:<input type="text"name="result"value=""id="input1"></input></td></tr>
+
+<tr><td>选择题2:<input type="text"name="result2"value=""id="input1"></input></td></tr>
+<tr><td>选择题3:<input type="text"name="result3"value=""id="input1"></input></td></tr>
+<tr><td>选择题4:<input type="text"name="result4"value=""id="input1"></input></td></tr>
+<tr><td>填空题1:<input type="text"name="result5"value=""id="input1"></input></td></tr>
+<tr><td>填空题2:<input type="text"name="result6"value=""id="input1"></input></td></tr>
+<tr><td>简答题1:<input type="text"name="result7"value=""id="input1"></input></td></tr>
+</table><br><br><br><br><br><br>
+<input style="margin-left: 100px ; " id="button1"type="submit"value="提交"id="submit"name=""></input>
+<input style="margin-left: 50px "id="button1"type="reset"value="重置"id="reset"name=""></input>
+
+</div>
+<!-- <div id="div6" style="height: 600px ">
+
+</div> -->
+
+
+<div id="div5">
+题目摘录<br><input id="input2"type="text" name="test1"value="集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A"></input>
+<!-- <input type="button" value="选择"onclick="showValue1();"></input> -->
+<textarea id="text4" >集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A</textarea>
+<input id="button"type="button" value="添加"onclick="showValue1();"></input>
+
+<input id="input2"type="text" name="test2"value="集合B={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A"></input>
+<!-- <input type="button" value="选择"onclick="showValue2();"></input> -->
+<textarea id="text4" >集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A</textarea>
+<input id="button"type="button" value="添加"onclick="showValue2();"></input>
+
+<input id="input2"type="text" name="test3"value="集合C={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A"></input>
+<!-- <input type="button" value="选择"onclick="showValue3();"></input> -->
+<textarea id="text4" >集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A</textarea>
+<input id="button"type="button" value="添加"onclick="showValue3();"></input>
+
+<!-- 占据位置 -->
+
+<input id="input2"type="text" name="test4"value="集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A"></input>
+<!-- <input type="button" value="选择"onclick="showValue3();"></input> -->
+<textarea id="text4" >集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A</textarea>
+<input id="button"type="button" value="添加"onclick="showValue4();"></input>
+<input id="input2"type="text" name="test5"value="集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A"></input>
+<!-- <input type="button" value="选择"onclick="showValue3();"></input> -->
+<textarea id="text4" >集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A</textarea>
+<input id="button"type="button" value="添加"onclick="showValue5();"></input>
+<input id="input2"type="text" name="test6"value="集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A"></input>
+<!-- <input type="button" svalue="选择"onclick="showValue3();"></input> -->
+<textarea id="text4" >集合A={y|y=x^2+2x+2,x属于R},B={x|m=n^2+n+3,n属于R}之间的关系是（）
+(A).A真包含于B (B).B真包含于A</textarea>
+<input id="button"type="button" value="添加"onclick="showValue6();"></input>
+
+
+<!-- 占据位置 -->
+<br><br><br><br><br>
+<input style="margin-left: 100px  " id="button1"type="submit"value="上传"id="submit"name=""></input>
+<input style="margin-left: 50px "id="button1"value="更多"id="reset"name=""></input>
+</div>
+</form>
+	</div>
+</body>
+</html>
